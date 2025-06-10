@@ -757,8 +757,12 @@ nav ul li a.btn {
     }
 
     .see-btn{
-      width: 59%;
+      width: 50%;
       padding: 10px;
+    }
+
+    .get-btn{
+        width: 60%;
     }
 
     .child-6{
