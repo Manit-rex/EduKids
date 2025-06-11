@@ -422,7 +422,7 @@ nav ul li a.btn {
 
   .child-2{
     margin-top: 70px;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -439,15 +439,23 @@ nav ul li a.btn {
     font-weight: 600;
   }
 
-  .arrow-container{
+  /* .arrow-container{
     width: 100%;
     display: flex;
     justify-content: end;
     align-items: end;
     gap: 10px;
   }
+    */
 
-  .arrow-container span{
+  .arrow-btn-1{
+    padding: 8px 16px;
+    color: white;
+    border-radius: 25px;
+    background-color: orangered;
+  } 
+
+  .arrow-btn-2{
     padding: 8px 16px;
     color: white;
     border-radius: 25px;
@@ -455,10 +463,42 @@ nav ul li a.btn {
   }
 
   .sub-child-2{
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    /* gap: 50px; */
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+  
+  #carouselExample {
+    position: relative !important;
+  }
+
+  #button-1{
+    position: absolute !important;
+    top: -360px !important;
+    left: -30px !important;
+  }
+
+  #button-2{
+    position: absolute !important;
+    
+    top: -360px !important;
+  }
+
+  /* .carousel-control-prev{
+    left: -130px !important;
+  }
+
+  .carousel-control-next{
+    right: -100px !important;
+  } */
+
+  .carousel-control-prev-icon{
+    background: none !important;
+  }
+
+  .carousel-control-next-icon{
+    background: none !important;
   }
 
   .comic{
@@ -689,14 +729,50 @@ nav ul li a.btn {
     width: 500px;
   }
 
+  .mobileview-carousel{
+    display: none;
+  }
+
+
   @media screen and (min-width: 320px) and (max-width: 768px) {
     .sub-child{
       flex-direction: column;
     }
 
     .sub-child-2{
-      overflow-x: auto;
-      gap: 20px;
+      display: none;
+    }
+
+    .carouselExample-1{
+      /* width: 100% !important; */
+      position: relative !important;
+    }
+
+    .carousel-item{
+      width: none !important;
+    }
+
+    /* .carousel-item img{
+      width: 100% !important;
+    } */
+
+    .mobileview-carousel{
+      margin-top: 30px;
+      display: unset;
+    }
+
+    #button-3{
+      position: absolute !important;
+      top: -330px !important;
+    }
+
+    #button-4{
+      position: absolute !important;
+      top: -330px !important;
+    }
+
+    .child-2 p{
+      text-align: center;
     }
 
     #tradi{
@@ -748,6 +824,10 @@ nav ul li a.btn {
       font-size: 18px;
     }
 
+    .get-btn{
+      width: 60%;
+    }
+
     #future{
       font-size: 20px;
     }
@@ -757,12 +837,8 @@ nav ul li a.btn {
     }
 
     .see-btn{
-      width: 50%;
+      width: 59%;
       padding: 10px;
-    }
-
-    .get-btn{
-        width: 60%;
     }
 
     .child-6{
